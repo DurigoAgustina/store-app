@@ -1,0 +1,27 @@
+@use '../../../styles/variables';
+
+.button {
+  font-family: variables.$principal-font;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: variables.$white;
+
+  &-primary {
+    transition: all .3s ease-in-out;
+    background-color: variables.$brand;
+
+    &:hover{
+      background-color: variables.$brand-hover;
+    }
+  }
+
+
+  &-outline {
+    background-color: variables.$white;
+    border: 1px solid variables.$black;
+    color: variables.$black;
+  }
+}
