@@ -1,0 +1,16 @@
+@use '../../../styles/variables';
+
+.title {
+
+  &-h1 {
+    font-size: 5rem;
+  }
+
+  &-h2{
+    font-size: 1.6rem;
+  }
+
+  &-brand{
+    color: variables.$brand;
+  }
+}
