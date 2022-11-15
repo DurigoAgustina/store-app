@@ -1,0 +1,11 @@
+@use '../../../styles/variables';
+
+.navbar__list {
+  display: flex;
+  gap: 15px;
+
+  a{
+    color: variables.$white;
+    font-weight: 700;
+  }
+}
