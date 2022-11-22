@@ -1,0 +1,29 @@
+@use '../../../styles/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px -3px (rgba(0,0,0,.3));
+  border-radius: 20px;
+  text-align: center;
+  font-family: variables.$principal-font;
+
+  &__img {
+    width: 100%;
+    border-radius: 20px 20px 0 0
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 10px;
+  }
+
+  &__price {
+    color: variables.$brand;
+    font-family: variables.$secondary-font;
+    font-weight: 700;
+  }
+}
