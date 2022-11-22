@@ -1,0 +1,12 @@
+@use '../../styles/variables';
+
+.store-page {
+  padding: 50px 0;
+  font-family: variables.$secondary-font;
+
+  h1 {
+    padding-bottom: 70px;
+    color: variables.$brand;
+    text-align: center;
+  }
+}

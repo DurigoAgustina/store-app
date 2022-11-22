@@ -1,8 +1,18 @@
-import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import Title from '../../components/commons/Title/Title'
+import GridCard from '../../components/layout/GridCard/GridCard'
+import './_StorePage.scss'
 
 const StorePage = () => {
+
+  const dispatch = useDispatch();
+  const {isLoading, page} = useSelector(state => state.products);
+
   return (
-    <div>StorePage</div>
+    <div className='store-page container'>
+      <Title Type="h1">Tienda</Title>
+      <GridCard />
+    </div>
   )
 }
 
