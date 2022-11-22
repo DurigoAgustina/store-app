@@ -1,0 +1,22 @@
+@use '../../../styles/variables';
+
+.footer {
+  background-color: variables.$brand;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color : variables.$white;
+  }
+
+  &__logo {
+    color: variables.$white;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+}
