@@ -2,7 +2,6 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: variables.$white;
   height: 70px;
@@ -23,5 +22,10 @@
     color: variables.$white;
     font-size: 2.3rem;
     font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 10px;
   }
 }
