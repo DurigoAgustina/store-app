@@ -1,0 +1,38 @@
+@use '../../styles/variables';
+
+
+.single-product {
+  display: flex;
+  gap: 0 50px;
+  padding: 70px 0;
+  align-items: center;
+
+
+  &__photo {
+    border-radius: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 30%;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 3rem;
+    color: variables.$text;
+  }
+
+  &__price {
+    color: variables.$text;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: right;
+  }
+
+  &__button {
+    font-size: 1.7rem;
+  }
+}
