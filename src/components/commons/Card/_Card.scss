@@ -17,12 +17,12 @@
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 25px 10px;
   }
 
   &__price {
-    color: variables.$brand;
+    color: variables.$text;
     font-family: variables.$secondary-font;
     font-weight: 700;
   }
