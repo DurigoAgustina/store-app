@@ -1,9 +1,9 @@
 import './_Title.scss';
 import PropTypes from 'prop-types';
 
-const Title = ({children, Type, color}) => {
+const Title = ({children, Type, color, className}) => {
   return (
-    <Type className={`title title-${Type} title-${color}`}>{ children }</Type>
+    <Type className={`title title-${Type} title-${color} ${className}`}>{ children }</Type>
   )
 }
 
