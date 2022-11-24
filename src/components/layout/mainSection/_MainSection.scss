@@ -2,11 +2,11 @@
 
 .main {
   padding: 50px 0;
-}
-
-h1 {
-  padding-bottom: 70px;
-  color: variables.$brand;
-  font-family: variables.$secondary-font;
-  text-align: center;
+  
+  h1 {
+    padding-bottom: 70px;
+    color: variables.$text;
+    font-family: variables.$secondary-font;
+    text-align: center;
+  }
 }
