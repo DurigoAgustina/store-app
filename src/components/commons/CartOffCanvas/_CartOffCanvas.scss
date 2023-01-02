@@ -1,3 +1,101 @@
+@use '../../../styles/variables';
+
 .cart-off-canvas {
-  
+  background-color: variables.$white;
+  height: 100vh;
+  width: 460px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(110%);
+  overflow-y: scroll;
+
+  &__icon-close{
+    width: 1.6rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__product {
+    padding-top: 30px;
+    display: flex;
+    gap: 25px;
+    height: 110px;
+  }
+
+  &__trash {
+    height: auto;
+    display: flex;
+    img {
+      width: 15px;
+    }
+  }
+
+  &__images {
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__img-product {
+    width: 90px;
+    border-radius: 7px;
+  }
+
+  &__quantity {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    border: 1px solid variables.$text;
+    width: min-content;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 200px;
+    gap: 5px;
+  }
+
+  &__total {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__summary {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtotal {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .cart-off-canvas {
+    width: 100%;
+  }
 }
