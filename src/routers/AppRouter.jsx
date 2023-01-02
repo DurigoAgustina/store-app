@@ -4,10 +4,15 @@ import StorePage from '../pages/StorePage/StorePage'
 import HomePage from '../pages/HomePage/HomePage'
 import SingleProduct from '../pages/SingleProduct/SingleProduct'
 import Footer from '../components/layout/Footer/Footer'
+import CartOffCanvas from '../components/commons/CartOffCanvas/CartOffCanvas'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+    <ToastContainer />
+    <CartOffCanvas />
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />}/>
