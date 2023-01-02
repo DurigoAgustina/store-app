@@ -1,10 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   singleProduct: [],
   isLoading: false,
 }
-
 
 export const singleProductSlice = createSlice ({
   name: 'singleProduct',
@@ -16,8 +15,8 @@ export const singleProductSlice = createSlice ({
     setSingleProduct: (state, action) => {
       state.isLoading = false;
       state.singleProduct = action.payload.singleProduct;
-    }
-  }
+    },
+  },
 })
 
 export const { startLoadingProducts, setSingleProduct } = singleProductSlice.actions;
