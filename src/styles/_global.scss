@@ -31,8 +31,19 @@ img {
   object-fit: cover;
 }
 
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.showCartOffCanvas {
+  transform: translateX(0%)
 }
