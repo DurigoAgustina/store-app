@@ -5,19 +5,31 @@ import { useParams } from 'react-router-dom'
 import './_SingleProduct.scss'
 import { useEffect } from 'react'
 import { getSingleProduct } from '../../store/slices/singleProduct/thunks'
+import { addToCart } from '../../store/slices/cart'
 
 const SingleProduct = () => {
 
   const dispatch = useDispatch();
   const { singleProduct, isLoading } = useSelector( state => state.singleProduct );
 
-  const { images, price, title, description } = singleProduct;
+  const { images: img, price, title, description } = singleProduct;
 
-  const { id } = useParams();
+  let { id } = useParams();
+  id = +id;
+
 
   useEffect(() => {
     dispatch( getSingleProduct( id ) )
   },[])
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({
+      id,
+      title,
+      img,
+      price,
+    }));
+  }
 
   return (
     <div className='single-product container'>
@@ -28,13 +40,13 @@ const SingleProduct = () => {
           :
             <>
               <div className='single-product__image'>
-                <img src={images} alt={title} className='single-product__photo'/>
+                <img src={img} alt={title} className='single-product__photo'/>
               </div>
               <div className='single-product__info'>
                 <Title Type='h1' className='single-product__title'>{title}</Title>
                 <p>{description}</p>
                 <span className='single-product__price'>${price}</span>
-                <Button variant='primary' className='single-product__button'>Añadir al carrito</Button>
+                <Button variant='primary' className='single-product__button' onClick={handleAddToCart}>Añadir al carrito</Button>
               </div>
             </>
       }
