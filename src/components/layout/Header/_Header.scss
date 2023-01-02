@@ -28,4 +28,23 @@
     display: flex;
     gap: 10px;
   }
+
+  &__cart{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    &-quantity{
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 18px;
+      width: 18px;
+      background-color: #000;
+      border-radius: 50%;
+      color: #fff;
+    }
+  }
 }
