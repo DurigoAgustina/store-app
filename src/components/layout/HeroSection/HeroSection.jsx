@@ -1,5 +1,4 @@
 import banner from '../../../assets/banner-01.jpg'
-import Title from '../../commons/Title/Title'
 import './_HeroSection.scss'
 
 const HeroSection = () => {
