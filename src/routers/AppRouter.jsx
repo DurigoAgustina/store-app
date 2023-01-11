@@ -7,10 +7,12 @@ import Footer from '../components/layout/Footer/Footer'
 import CartOffCanvas from '../components/commons/CartOffCanvas/CartOffCanvas'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import ScrollToTop from '../utils/ScrollToTop'
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
     <ToastContainer />
     <CartOffCanvas />
       <Header />
